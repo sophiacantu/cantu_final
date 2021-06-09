@@ -2,16 +2,171 @@
     Hero
 ============= */
 
-#hero{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". hero .";
+// #hero{
+//     display: grid;
+//     grid-template-columns: 16px auto 16px;
+//     grid-template-areas: ". hero .";
+//     margin-top: 165px;
 
-    >div{
-        grid-area: hero;
+//     @include md{
+//         padding: 22px 0;
+//         margin-top: 290px;
+//     }
+
+//     @include lg{
+//         padding: 22px 0;
+//         margin-top: 320px;
+//     }
+
+//     @include xl{
+//         grid-template-columns: auto 480px 16px;
+//         margin-top: 350px;
+//     }
+
+//     >div{
+//         grid-area: hero;
+//     }
+
+//     a{
+//         text-decoration: none;
+//     }
+
+//     img{
+//         width: 20%;
+//     }
+// }
+
+#hero{
+
+    margin-bottom: 24px;
+    margin-top: 165px;
+    margin-left: 70px;
+
+    @include md{
+        margin-bottom: 24px;
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". hero .";
+        padding: 22px 0;
+        margin-top: 290px;
     }
 
-    img{
-        width: 20%;
+    @include lg{
+        padding: 22px 0;
+        margin-top: 350px;
+    }
+
+    @include xl{
+        margin-bottom: 64px;
+        grid-template-columns: auto 1200px auto;
+        padding: 22px 0;
+        margin-top: 380px;
+    }
+
+    h2{
+        color: $black;
+        font-size: rem-calc(20);
+        font-weight: 600;
+        // margin-bottom: 16px;
+        margin-top: 16px;
+        padding: 0px 16px 24px;
+
+        @include md{
+             font-size: rem-calc(20);
+             font-weight: 600;
+        }
+
+        @include lg{
+            font-size: rem-calc(37);
+            font-weight: 400;
+        }
+    }
+
+    >div{
+        
+        @include md{
+            grid-area: hero;
+        }
+
+        ul{
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "c1 c2"
+            "c3 c4";
+
+            @include md{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                ". c1 c2 ."
+                "c3 . . c4";
+                gap: 16px;
+            }
+
+            @include lg{
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                ". c1 c2 ."
+                "c3 . . c4";
+            }
+
+            li{
+                background-color: #fff;
+                background-size: cover;
+                background-position: center;
+                img{
+                    width: 60%;
+
+                    @include md{
+                        width: 100%
+                    }
+
+                    @include lg{
+                        width: 100%
+                    }
+
+                    @include xl{
+                        width: 100%
+                    }
+                }
+    
+                section{ 
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". hero .";
+                    padding: 16px 0;  
+    
+                    >div{
+                        grid-area: hero;
+                    }
+                }
+            }
+
+            #c1{
+                @include md{
+                    grid-area: c1;
+                }
+            }
+
+            #c2{
+                @include md{
+                    grid-area: c2;
+                }
+            }
+
+            #c3{
+                @include md{
+                    grid-area: c3;
+                }
+            }
+
+            #c4{
+                @include md{
+                    grid-area: c4;
+                }
+            }
+        }
     }
 }
