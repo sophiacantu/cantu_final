@@ -823,6 +823,11 @@ footer > div {
 #about > div {
   grid-area: about;
 }
+#about > div #paragraph1 {
+  margin-bottom: 60px;
+  margin-left: 16px;
+  margin-right: 150px;
+}
 
 #aboutTitle {
   background-color: #C4E6E2;
@@ -832,6 +837,54 @@ footer > div {
   padding-bottom: 18px;
   color: #466D68;
   margin-bottom: 30px;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.container img {
+  width: 200%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #FEDFE5;
+  color: #B66669;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+.container .btn2 {
+  position: absolute;
+  top: 50%;
+  right: -110%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #FEDFE5;
+  color: #B66669;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn2:hover {
+  background-color: black;
 }
 
 /* =============
