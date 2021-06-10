@@ -820,13 +820,18 @@ footer > div {
 /* =============
     About
 ============= */
-#about {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". about .";
-}
 #about > div {
   grid-area: about;
+}
+
+#aboutTitle {
+  background-color: #C4E6E2;
+  margin-right: 200px;
+  padding-left: 16px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  color: #466D68;
+  margin-bottom: 30px;
 }
 
 /* =============

@@ -3,12 +3,22 @@
 ============= */
 
 #about{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". about .";
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". about .";
  
     >div{
         grid-area: about;
         // border: 1px solid blue;
     }
+}
+
+#aboutTitle{
+    background-color: $greenLight;
+    margin-right: 200px;
+    padding-left: 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: $greenDark;
+    margin-bottom: 30px;
 }
