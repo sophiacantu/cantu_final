@@ -50,6 +50,15 @@ header {
         grid-template-columns: 20% auto;
         grid-area: header;
 
+        @include md{
+            display: grid;
+            grid-template-areas:
+            "logo title burger"
+            "nav nav nav";
+            grid-template-columns: 20% auto;
+            grid-area: header;
+        }
+
         @include lg{
             grid-template-areas: "logo nav";
             grid-template-columns: 20% auto;
@@ -63,12 +72,22 @@ header {
         font-size: rem-calc(15);
         padding-left: 15px;
         margin-top: 12px;
+
+        @include md{
+            margin-left: 150px;
+            margin-top: 40px;
+        }
     }
 
     #logo{
         grid-area: logo;
         margin-left: 100px;
         width: 25%;
+
+        @include md{
+            margin-left: 50px;
+            width: 60%;
+        }
     }
 
     #logo-container{
@@ -104,6 +123,10 @@ header {
             cursor: pointer;
             font-size: rem-calc(30);
             color: $blueDark;
+
+            @include md{
+                margin-right: 40px;
+            }
         }
     }
 

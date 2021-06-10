@@ -506,6 +506,14 @@ header > div {
   grid-template-columns: 20% auto;
   grid-area: header;
 }
+@media (min-width: 768px) {
+  header > div {
+    display: grid;
+    grid-template-areas: "logo title burger" "nav nav nav";
+    grid-template-columns: 20% auto;
+    grid-area: header;
+  }
+}
 @media (min-width: 992px) {
   header > div {
     grid-template-areas: "logo nav";
@@ -519,10 +527,22 @@ header #title {
   padding-left: 15px;
   margin-top: 12px;
 }
+@media (min-width: 768px) {
+  header #title {
+    margin-left: 150px;
+    margin-top: 40px;
+  }
+}
 header #logo {
   grid-area: logo;
   margin-left: 100px;
   width: 25%;
+}
+@media (min-width: 768px) {
+  header #logo {
+    margin-left: 50px;
+    width: 60%;
+  }
 }
 header #logo-container {
   grid-area: logo;
@@ -547,6 +567,11 @@ header #burger-container i {
   cursor: pointer;
   font-size: 1.875rem;
   color: #2A466D;
+}
+@media (min-width: 768px) {
+  header #burger-container i {
+    margin-right: 40px;
+  }
 }
 header #nav-container {
   background-color: #B66669;
@@ -578,12 +603,51 @@ footer > div {
 ============= */
 #headerLinks {
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". headerLinks .";
+  margin-top: 170px;
   background-color: #FEDFE5;
+}
+@media (min-width: 768px) {
+  #headerLinks {
+    margin-top: 160px;
+  }
 }
 #headerLinks > div {
   grid-area: headerLinks;
+}
+#headerLinks > div #covid {
+  background-color: #F18D8D;
+  padding-left: 180px;
+  padding-right: 190px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media (min-width: 768px) {
+  #headerLinks > div #covid {
+    padding-left: 460px;
+    padding-right: 500px;
+    padding-top: -10px;
+  }
+}
+#headerLinks > div #donate {
+  background-color: #2A466D;
+  padding-left: 230px;
+  padding-right: 190px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media (min-width: 768px) {
+  #headerLinks > div #donate {
+    padding-left: 500px;
+    padding-right: 550px;
+    padding-top: -10px;
+  }
+}
+#headerLinks > div h3 {
+  color: #fff;
+}
+#headerLinks > div a {
+  text-decoration: none;
 }
 
 /* =============
@@ -591,18 +655,18 @@ footer > div {
 ============= */
 #hero {
   margin-bottom: 24px;
-  margin-top: 165px;
+  margin-top: 90px;
   margin-left: 90px;
 }
 @media (min-width: 768px) {
   #hero {
     margin-bottom: 24px;
-    margin-left: 10px;
+    margin-left: 5px;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". hero .";
     padding: 22px 0;
-    margin-top: 220px;
+    margin-top: 80px;
   }
 }
 @media (min-width: 992px) {
@@ -643,8 +707,8 @@ footer > div {
 }
 @media (min-width: 768px) {
   #hero > div #t1 {
-    padding-left: -55px;
-    padding-right: 80px;
+    margin-left: 5px;
+    margin-right: 100px;
   }
 }
 @media (min-width: 768px) {
@@ -655,8 +719,18 @@ footer > div {
 #hero > div #t3 {
   margin-left: -10px;
 }
+@media (min-width: 768px) {
+  #hero > div #t3 {
+    margin-left: 10px;
+  }
+}
 #hero > div #t4 {
   margin-left: -10px;
+}
+@media (min-width: 768px) {
+  #hero > div #t4 {
+    margin-left: 20px;
+  }
 }
 @media (min-width: 768px) {
   #hero > div {
@@ -718,28 +792,28 @@ footer > div {
   #hero > div ul #c1 {
     grid-area: c1;
     margin-right: 20px;
-    width: 80%;
+    width: 65%;
   }
 }
 @media (min-width: 768px) {
   #hero > div ul #c2 {
     grid-area: c2;
     margin-left: 20px;
-    width: 140%;
+    width: 120%;
   }
 }
 @media (min-width: 768px) {
   #hero > div ul #c3 {
     grid-area: c3;
     margin-left: 140px;
-    width: 70%;
+    width: 65%;
   }
 }
 @media (min-width: 768px) {
   #hero > div ul #c4 {
     grid-area: c4;
     margin-right: 150px;
-    width: 60%;
+    width: 55%;
   }
 }
 

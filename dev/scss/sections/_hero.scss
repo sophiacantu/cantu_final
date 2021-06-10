@@ -39,17 +39,17 @@
 #hero{
 
     margin-bottom: 24px;
-    margin-top: 165px;
+    margin-top: 90px;
     margin-left: 90px;
 
     @include md{
         margin-bottom: 24px;
-        margin-left: 10px;
+        margin-left: 5px;
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". hero .";
         padding: 22px 0;
-        margin-top: 220px;
+        margin-top: 80px;
     }
 
     @include lg{
@@ -90,8 +90,8 @@
             margin-left: -15px;
 
             @include md{
-            padding-left: -55px;
-            padding-right: 80px;
+            margin-left: 5px;
+            margin-right: 100px;
             }
         }
 
@@ -103,10 +103,18 @@
 
         #t3{
             margin-left: -10px;
+
+            @include md{
+                margin-left: 10px;
+            }
         }
 
         #t4{
             margin-left: -10px;
+
+            @include md{
+                margin-left: 20px;
+            }
         }
         
         @include md{
@@ -173,7 +181,7 @@
                 @include md{
                     grid-area: c1;
                     margin-right: 20px;
-                    width: 80%;
+                    width: 65%;
                 }
             }
 
@@ -181,7 +189,7 @@
                 @include md{
                     grid-area: c2;
                     margin-left: 20px;
-                    width: 140%;
+                    width: 120%;
                 }
             }
 
@@ -189,7 +197,7 @@
                 @include md{
                     grid-area: c3;
                     margin-left: 140px;
-                    width: 70%;
+                    width: 65%;
                 }
             }
 
@@ -197,7 +205,7 @@
                 @include md{
                     grid-area: c4;
                     margin-right: 150px;
-                    width: 60%;
+                    width: 55%;
                 }
             }
         }
