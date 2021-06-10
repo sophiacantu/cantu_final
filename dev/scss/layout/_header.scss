@@ -24,10 +24,10 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    // display: grid;
-    // grid-template-columns: 16px auto 16px;
-    // grid-template-areas: ". header .";
-    // padding: 21px 0;
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". header .";
+    padding: 21px 0;
 
     @include md{
         padding: 24px 0;
@@ -44,8 +44,9 @@ header {
     >div {
         display: grid;
         grid-template-areas:
-        "logo burger"
-        "nav nav";
+        ". logo burger"
+        ". title title"
+        "nav nav nav";
         grid-template-columns: 20% auto;
         grid-area: header;
 
@@ -54,6 +55,20 @@ header {
             grid-template-columns: 20% auto;
         }
 
+    }
+
+    #title{
+        grid-area: title;
+        color: $blueDark;
+        font-size: rem-calc(15);
+        padding-left: 15px;
+        margin-top: 12px;
+    }
+
+    #logo{
+        grid-area: logo;
+        margin-left: 90px;
+        width: 30%;
     }
 
     #logo-container{
@@ -75,7 +90,7 @@ header {
 
     #burger-container{
         background-color: $pinkLight;
-        align-items: center;
+        // align-items: center;
         display: flex;
         grid-area: burger;
         padding: 10px;
@@ -88,7 +103,7 @@ header {
             margin-left: auto;
             cursor: pointer;
             font-size: rem-calc(30);
-            color: $white;
+            color: $blueDark;
         }
     }
 
