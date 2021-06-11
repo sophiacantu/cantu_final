@@ -12,6 +12,10 @@
         margin-top: 160px;
     }
 
+    @include lg{
+        margin-top: 160px;
+    }
+
     >div{
         grid-area: headerLinks;
         // border: 1px solid blue;

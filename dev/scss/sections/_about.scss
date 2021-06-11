@@ -68,6 +68,11 @@
         padding-bottom: 18px;
         color: $greenDark;
         margin-bottom: 30px;
+
+        @include md{
+            padding-right: -80px;
+            padding-left: 55px;
+        }
     }
 
     .container {
