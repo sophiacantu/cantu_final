@@ -23,3 +23,25 @@
         color: $blueMedium;
     }
 }
+
+.blue-button2 {
+    background-color: $blueMedium;
+    color: $pinkLight;
+    border: none;
+    font-size: rem-calc(14);
+    font-weight: 400;
+    margin-left: 145px;
+    margin-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-variation-settings: "wght" 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.10s;
+
+    &:hover {
+
+        background-color: $white;
+        color: $blueMedium;
+    }
+}

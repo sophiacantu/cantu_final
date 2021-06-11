@@ -3,11 +3,76 @@
 ============= */
 
 #support{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". support .";
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". support .";
 
     >div{
         grid-area: support;
+    }
+
+    #supportTitle{
+        background-color: $greenLight;
+        margin-right: 200px;
+        margin-top: 100px;
+        padding-left: 16px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        color: $greenDark;
+        margin-bottom: 40px;
+    }
+
+    div{
+        #supportPic{
+            width: 80%;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+
+        #support1{
+            color: $blueDark;
+            margin-top: 55px;
+            margin-left: 20px;
+            margin-bottom: 40px;
+        }
+
+        #supportText{
+            margin-bottom: 30px;
+            margin-left: 30px;
+            margin-right: 140px;
+            color: $blueDark;
+        }
+    }
+
+    ul{
+
+        margin-left: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "supportBtn supportBtn2";
+
+        li{
+
+            margin-left: -165px;
+            margin-bottom: 70px;
+
+            #supportBtn{
+
+                @include md{
+                    grid-area: supportBtn;
+                    margin-right: 10px;
+                    margin-left: 20px;
+                }
+            }
+
+            #supportBtn2{
+
+                @include md{
+                    grid-area: supportBtn2;
+                    margin-left: 20px;
+                }
+            }
+        }
     }
 }

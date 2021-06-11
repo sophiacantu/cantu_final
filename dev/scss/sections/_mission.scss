@@ -3,11 +3,54 @@
 ============= */
 
 #mission{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". mission .";
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". mission .";
 
     >div{
         grid-area: mission;
+    }
+
+    #missionTitle{
+        background-color: $greenLight;
+        margin-right: 200px;
+        margin-top: 130px;
+        padding-left: 16px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        color: $greenDark;
+        margin-bottom: 60px;
+    }
+
+    div{
+        #missionText{
+            margin-bottom: 20px;
+            margin-left: 110px;
+            margin-right: 110px;
+            color: $blueDark;
+        }
+
+        #missionPic{
+            width: 90%;
+            margin-top: 70px;
+            margin-left: 25px;
+        }
+
+        #quote{
+            text-align: center;
+            margin-bottom: 20px;
+            margin-left: 110px;
+            margin-right: 110px;
+            margin-top: 30px;
+            color: $blueDark;
+        }
+
+        #quoteName{
+            margin-bottom: 20px;
+            margin-left: 110px;
+            margin-right: 110px;
+            margin-top: 30px;
+            color: $blueDark;
+        }
     }
 }

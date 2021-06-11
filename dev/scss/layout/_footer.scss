@@ -2,7 +2,7 @@
     Footer
 ============= */
 
-footer{
+#footer{
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
@@ -13,4 +13,104 @@ footer{
         // border: 1px solid blue;
     }
 
+    a{
+        color: white;
+    }
+
+    h5{
+        color: $pinkLight;
+    }
+
+    >div{
+
+        ul{
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "footer1 footer3"
+            "footer2 footer4";
+
+            li{
+                background-color: $blueDark;
+                background-size: cover;
+                background-position: center;
+                img{
+                    width: 60%;
+
+                    @include md{
+                        width: 100%
+                    }
+
+                    @include lg{
+                        width: 100%
+                    }
+
+                    @include xl{
+                        width: 100%
+                    }
+                }
+    
+                section{ 
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". footer .";
+                    padding: 16px 0;  
+    
+                    >div{
+                        grid-area: footer;
+                    }
+                }
+            }
+
+            #footer1{
+
+                grid-area: footer1;
+                margin-right: 20px;
+                margin-left: 15px;
+
+                @include md{
+                    grid-area: footer1;
+                    margin-right: 20px;
+                }
+            }
+
+            #footer2{
+
+                grid-area: footer2;
+                margin-left: 15px;
+
+                @include md{
+                    grid-area: footer2;
+                    margin-left: 20px;
+                }
+            }
+
+            #footer3{
+
+                grid-area: footer3;
+                margin-left: 30px;
+                margin-top: 55px;
+                font-size: rem-calc(50);
+                margin-bottom: 0px;
+
+                @include md{
+                    grid-area: footer3;
+                    margin-left: 140px;
+                }
+            }
+
+            #footer4{
+
+                grid-area: footer4;
+                margin-left: 30px;
+                font-size: rem-calc(10);
+
+                @include md{
+                    grid-area: footer4;
+                    margin-right: 150px;
+                }
+            }
+        }
+    }
 }
