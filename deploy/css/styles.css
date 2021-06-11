@@ -1103,14 +1103,24 @@ footer > div {
 #film > div #rules {
   color: #2A466D;
   margin-top: 70px;
-  margin-left: 20px;
+  margin-left: 135px;
   margin-bottom: 40px;
 }
 #film > div #rulesText {
-  margin-bottom: 40px;
-  margin-left: 30px;
-  margin-right: 140px;
+  margin-bottom: 50px;
+  margin-left: 110px;
+  margin-right: 100px;
   color: #2A466D;
+}
+#film > div #visitors {
+  color: #2A466D;
+  margin-top: 90px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+#film > div #video {
+  margin-bottom: 16px;
+  margin-left: 50px;
 }
 #film > div ul {
   margin-left: 60px;
