@@ -643,6 +643,9 @@ header #nav-container {
 #footer a {
   color: white;
 }
+#footer a:hover {
+  color: #FEDFE5;
+}
 #footer h5 {
   color: #FEDFE5;
 }
@@ -693,6 +696,9 @@ header #nav-container {
     grid-area: footer1;
     margin-right: 20px;
   }
+}
+#footer > div ul #footer1:hover {
+  color: #fff;
 }
 #footer > div ul #footer2 {
   grid-area: footer2;
@@ -850,10 +856,16 @@ header #nav-container {
     margin-right: 100px;
   }
 }
+#hero > div #t1:hover {
+  color: #fff;
+}
 @media (min-width: 768px) {
   #hero > div #t2 {
     margin-left: 20px;
   }
+}
+#hero > div #t2:hover {
+  color: #fff;
 }
 #hero > div #t3 {
   margin-left: -10px;
@@ -863,6 +875,9 @@ header #nav-container {
     margin-left: 10px;
   }
 }
+#hero > div #t3:hover {
+  color: #fff;
+}
 #hero > div #t4 {
   margin-left: -10px;
 }
@@ -870,6 +885,9 @@ header #nav-container {
   #hero > div #t4 {
     margin-left: 20px;
   }
+}
+#hero > div #t4:hover {
+  color: #fff;
 }
 @media (min-width: 768px) {
   #hero > div {
@@ -1194,6 +1212,9 @@ header #nav-container {
     margin-right: 100px;
   }
 }
+#film > div #f1:hover {
+  color: #fff;
+}
 #film > div #f2 {
   color: #466D68;
   margin-left: 30px;
@@ -1202,6 +1223,9 @@ header #nav-container {
   #film > div #f2 {
     margin-left: 20px;
   }
+}
+#film > div #f2:hover {
+  color: #fff;
 }
 @media (min-width: 768px) {
   #film > div {

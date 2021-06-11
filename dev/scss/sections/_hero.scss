@@ -93,11 +93,19 @@
             margin-left: 5px;
             margin-right: 100px;
             }
+
+            &:hover {
+                color: $white;
+            }
         }
 
         #t2{
             @include md{
                 margin-left: 20px;
+            }
+
+            &:hover {
+                color: $white;
             }
         }
 
@@ -107,6 +115,10 @@
             @include md{
                 margin-left: 10px;
             }
+
+            &:hover {
+                color: $white;
+            }
         }
 
         #t4{
@@ -114,6 +126,10 @@
 
             @include md{
                 margin-left: 20px;
+            }
+
+            &:hover {
+                color: $white;
             }
         }
         
