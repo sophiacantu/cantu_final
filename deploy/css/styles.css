@@ -1063,13 +1063,113 @@ footer > div {
 /* =============
     Film
 ============= */
-#film {
+#film > div {
+  grid-area: film;
+}
+#film #filmTitle {
+  background-color: #C4E6E2;
+  margin-right: 200px;
+  margin-top: 130px;
+  padding-left: 16px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  color: #466D68;
+  margin-bottom: 30px;
+}
+#film > div #f1 {
+  color: #466D68;
+  margin-left: 10px;
+}
+@media (min-width: 768px) {
+  #film > div #f1 {
+    margin-left: 5px;
+    margin-right: 100px;
+  }
+}
+#film > div #f2 {
+  color: #466D68;
+  margin-left: 30px;
+}
+@media (min-width: 768px) {
+  #film > div #f2 {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #film > div {
+    grid-area: film;
+  }
+}
+#film > div #rules {
+  color: #2A466D;
+  margin-top: 70px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+#film > div #rulesText {
+  margin-bottom: 40px;
+  margin-left: 30px;
+  margin-right: 140px;
+  color: #2A466D;
+}
+#film > div ul {
+  margin-left: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "film1 film2";
+}
+#film > div ul li {
+  background-color: #F6F2EB;
+  background-size: cover;
+  background-position: center;
+}
+#film > div ul li img {
+  width: 60%;
+}
+@media (min-width: 768px) {
+  #film > div ul li img {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  #film > div ul li img {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  #film > div ul li img {
+    width: 100%;
+  }
+}
+#film > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". film .";
+  padding: 16px 0;
 }
-#film > div {
+#film > div ul li section > div {
   grid-area: film;
+}
+#film > div ul #film1 {
+  width: 120%;
+}
+@media (min-width: 768px) {
+  #film > div ul #film1 {
+    grid-area: film1;
+    margin-right: 10px;
+    margin-left: 20px;
+    width: 65%;
+  }
+}
+#film > div ul #film2 {
+  width: 120%;
+}
+@media (min-width: 768px) {
+  #film > div ul #film2 {
+    grid-area: film2;
+    margin-left: 20px;
+    width: 120%;
+  }
 }
 
 /* =============

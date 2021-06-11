@@ -3,11 +3,126 @@
 ============= */
 
 #film{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". film .";
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". film .";
 
     >div{
         grid-area: film;
+    }
+
+    #filmTitle{
+        background-color: $greenLight;
+        margin-right: 200px;
+        margin-top: 130px;
+        padding-left: 16px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        color: $greenDark;
+        margin-bottom: 30px;
+    }
+
+    >div{
+
+        #f1{
+            color: $greenDark;
+            margin-left: 10px;
+
+            @include md{
+            margin-left: 5px;
+            margin-right: 100px;
+            }
+        }
+
+        #f2{
+            color: $greenDark;
+            margin-left: 30px;
+
+            @include md{
+                margin-left: 20px;
+            }
+        }
+
+        @include md{
+            grid-area: film;
+        }
+
+        #rules{
+            color: $blueDark;
+            margin-top: 70px;
+            margin-left: 20px;
+            margin-bottom: 40px;
+        }
+
+        #rulesText{
+            margin-bottom: 40px;
+            margin-left: 30px;
+            margin-right: 140px;
+            color: $blueDark;
+        }
+
+        ul{
+
+            margin-left: 60px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "film1 film2";
+
+            li{
+                background-color: #F6F2EB;
+                background-size: cover;
+                background-position: center;
+                img{
+                    width: 60%;
+
+                    @include md{
+                        width: 100%
+                    }
+
+                    @include lg{
+                        width: 100%
+                    }
+
+                    @include xl{
+                        width: 100%
+                    }
+                }
+    
+                section{ 
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". film .";
+                    padding: 16px 0;  
+    
+                    >div{
+                        grid-area: film;
+                    }
+                }
+            }
+
+            #film1{
+
+                width: 120%;
+
+                @include md{
+                    grid-area: film1;
+                    margin-right: 10px;
+                    margin-left: 20px;
+                    width: 65%;
+                }
+            }
+
+            #film2{
+
+                width: 120%;
+
+                @include md{
+                    grid-area: film2;
+                    margin-left: 20px;
+                    width: 120%;
+                }
+            }
+        }
     }
 }
