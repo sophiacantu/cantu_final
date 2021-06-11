@@ -3,11 +3,115 @@
 ============= */
 
 #plan{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". plan .";
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". plan .";
 
     >div{
         grid-area: plan;
+
+        #planTitle{
+            background-color: $greenLight;
+            margin-right: 200px;
+            padding-left: 16px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            color: $greenDark;
+            margin-top: 120px;
+            margin-bottom: 60px;
+        }
+
+        #plan2{
+            color: $blueDark;
+            margin-top: 90px;
+            margin-left: 20px;
+            margin-bottom: 40px;
+        }
+
+        #parking{
+            width: 90%;
+            margin-bottom: 30px;
+            margin-left: 27px;
+        }
+
+        #parkingText{
+            margin-bottom: 50px;
+            margin-left: 30px;
+            margin-right: 140px;
+            color: $blueDark;
+        }
+
+        #plan3{
+            color: $blueDark;
+            margin-top: 90px;
+            margin-left: 20px;
+            margin-bottom: 40px;
+        }
+
+        #camping{
+            width: 90%;
+            margin-bottom: 30px;
+            margin-left: 27px;
+        }
+
+        #campingText{
+            margin-bottom: 16px;
+            margin-left: 30px;
+            margin-right: 140px;
+            color: $blueDark;
+        }
+
+        ul{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "p1 Cap1"
+            "Cap2 p2";
+
+            #p1{
+                width: 90%;
+                margin-left: 20px;
+                @include md{
+                    grid-area: p1;
+                    margin-right: 20px;
+                    width: 65%;
+                }
+            }
+
+            #p2{
+                width: 92%;
+                margin-right: 10px;
+                @include md{
+                    grid-area: p2;
+                    margin-left: 20px;
+                    width: 120%;
+                }
+            }
+
+            #Cap1{
+                grid-area: Cap1;
+                color: $greenDark;
+                margin-top: 110px;
+                margin-left: 35px;
+                font-size: rem-calc(20);
+    
+                @include md{
+                margin-left: 5px;
+                margin-right: 100px;
+                }
+            }
+    
+            #Cap2{
+                grid-area: Cap2;
+                color: $greenDark;
+                margin-top: 55px;
+                margin-left: 32px;
+                font-size: rem-calc(20);
+
+                @include md{
+                    margin-left: 20px;
+                }
+            }
+        }
     }
 }

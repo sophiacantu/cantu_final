@@ -411,6 +411,26 @@ p {
 /* =============
     Buttons
 ============= */
+.blue-button {
+  background-color: #507DBC;
+  color: #FEDFE5;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-left: 180px;
+  margin-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-variation-settings: "wght" 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.1s;
+}
+.blue-button:hover {
+  background-color: #fff;
+  color: #507DBC;
+}
+
 /* =============
     Forms
 ============= */
@@ -565,13 +585,16 @@ header #burger-container {
 header #burger-container i {
   margin-left: auto;
   cursor: pointer;
-  font-size: 1.875rem;
+  font-size: 3.125rem;
   color: #2A466D;
 }
 @media (min-width: 768px) {
   header #burger-container i {
     margin-right: 40px;
   }
+}
+header #burger-container i:hover {
+  color: #fff;
 }
 header #nav-container {
   background-color: #B66669;
@@ -604,7 +627,7 @@ footer > div {
 #headerLinks {
   display: grid;
   grid-template-areas: ". headerLinks .";
-  margin-top: 170px;
+  margin-top: 168px;
   background-color: #FEDFE5;
 }
 @media (min-width: 768px) {
@@ -629,6 +652,10 @@ footer > div {
     padding-top: -10px;
   }
 }
+#headerLinks > div #covid:hover {
+  background-color: #fff;
+  color: #F18D8D;
+}
 #headerLinks > div #donate {
   background-color: #2A466D;
   padding-left: 230px;
@@ -643,6 +670,10 @@ footer > div {
     padding-top: -10px;
   }
 }
+#headerLinks > div #donate:hover {
+  background-color: #fff;
+  color: #2A466D;
+}
 #headerLinks > div h3 {
   color: #fff;
 }
@@ -654,7 +685,7 @@ footer > div {
     Hero
 ============= */
 #hero {
-  margin-bottom: 24px;
+  margin-bottom: 64px;
   margin-top: 90px;
   margin-left: 90px;
 }
@@ -820,16 +851,54 @@ footer > div {
 /* =============
     About
 ============= */
-#about > div {
+#about {
   grid-area: about;
 }
-#about > div #paragraph1 {
+#about #instaLogo {
+  grid-area: il;
+  color: #fff;
+  background-color: #DCD3C4;
+  margin-left: 32px;
+  padding-left: 30px;
+  padding-right: 403px;
+  margin-top: 95px;
+  padding-top: 20px;
+  font-size: 1.875rem;
+}
+#about #instaLogo:hover {
+  color: #2A466D;
+}
+#about #instaText {
+  color: #2A466D;
+  background-color: #DCD3C4;
+  margin-right: 29px;
+  margin-left: 32px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+}
+#about #instaTag {
+  grid-area: it;
+  color: #2A466D;
+  background-color: #DCD3C4;
+  margin-right: 29px;
+  padding-left: 55px;
+  margin-left: 32px;
+  padding-bottom: 15px;
+}
+#about #paragraph1 {
   margin-bottom: 60px;
   margin-left: 16px;
   margin-right: 150px;
+  color: #2A466D;
 }
-
-#aboutTitle {
+#about #paragraph2 {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-left: 16px;
+  margin-right: 150px;
+  color: #2A466D;
+}
+#about #aboutTitle {
   background-color: #C4E6E2;
   margin-right: 200px;
   padding-left: 16px;
@@ -838,65 +907,157 @@ footer > div {
   color: #466D68;
   margin-bottom: 30px;
 }
-
-.container {
+#about .container {
   position: relative;
   width: 50%;
 }
-
-.container img {
+#about .container img {
   width: 200%;
   height: auto;
 }
-
-.container .btn {
+#about .container .btn {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 16%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #FEDFE5;
   color: #B66669;
-  font-size: 16px;
-  padding: 12px 24px;
+  font-size: 1.875rem;
+  padding: 12px 40px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
 }
-
-.container .btn:hover {
-  background-color: black;
+#about .container .btn:hover {
+  background-color: #B66669;
+  color: #FEDFE5;
 }
-
-.container .btn2 {
+#about .container .btn2 {
   position: absolute;
   top: 50%;
-  right: -110%;
+  right: -118%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #FEDFE5;
   color: #B66669;
-  font-size: 16px;
-  padding: 12px 24px;
+  font-size: 1.875rem;
+  padding: 12px 40px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
 }
-
-.container .btn2:hover {
-  background-color: black;
+#about .container .btn2:hover {
+  background-color: #B66669;
+  color: #FEDFE5;
+}
+#about #bg {
+  color: #2A466D;
+  margin-top: 60px;
+  margin-left: 20px;
 }
 
 /* =============
     Plan
 ============= */
-#plan {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". plan .";
-}
 #plan > div {
   grid-area: plan;
+}
+#plan > div #planTitle {
+  background-color: #C4E6E2;
+  margin-right: 200px;
+  padding-left: 16px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  color: #466D68;
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+#plan > div #plan2 {
+  color: #2A466D;
+  margin-top: 90px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+#plan > div #parking {
+  width: 90%;
+  margin-bottom: 30px;
+  margin-left: 27px;
+}
+#plan > div #parkingText {
+  margin-bottom: 50px;
+  margin-left: 30px;
+  margin-right: 140px;
+  color: #2A466D;
+}
+#plan > div #plan3 {
+  color: #2A466D;
+  margin-top: 90px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+#plan > div #camping {
+  width: 90%;
+  margin-bottom: 30px;
+  margin-left: 27px;
+}
+#plan > div #campingText {
+  margin-bottom: 16px;
+  margin-left: 30px;
+  margin-right: 140px;
+  color: #2A466D;
+}
+#plan > div ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "p1 Cap1" "Cap2 p2";
+}
+#plan > div ul #p1 {
+  width: 90%;
+  margin-left: 20px;
+}
+@media (min-width: 768px) {
+  #plan > div ul #p1 {
+    grid-area: p1;
+    margin-right: 20px;
+    width: 65%;
+  }
+}
+#plan > div ul #p2 {
+  width: 92%;
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  #plan > div ul #p2 {
+    grid-area: p2;
+    margin-left: 20px;
+    width: 120%;
+  }
+}
+#plan > div ul #Cap1 {
+  grid-area: Cap1;
+  color: #466D68;
+  margin-top: 110px;
+  margin-left: 35px;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  #plan > div ul #Cap1 {
+    margin-left: 5px;
+    margin-right: 100px;
+  }
+}
+#plan > div ul #Cap2 {
+  grid-area: Cap2;
+  color: #466D68;
+  margin-top: 55px;
+  margin-left: 32px;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  #plan > div ul #Cap2 {
+    margin-left: 20px;
+  }
 }
 
 /* =============

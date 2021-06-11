@@ -121,11 +121,15 @@ header {
         i{
             margin-left: auto;
             cursor: pointer;
-            font-size: rem-calc(30);
+            font-size: rem-calc(50);
             color: $blueDark;
 
             @include md{
                 margin-right: 40px;
+            }
+
+            &:hover {
+                color: $white;
             }
         }
     }

@@ -6,7 +6,7 @@
     display: grid;
     // grid-template-columns: 16px auto 16px;
     grid-template-areas: ". headerLinks .";
-    margin-top: 170px;
+    margin-top: 168px;
 
     @include md{
         margin-top: 160px;
@@ -27,6 +27,12 @@
                 padding-right: 500px;
                 padding-top: -10px;
             }
+
+            &:hover {
+
+                background-color: $white;
+                color: $pinkMedium;
+            }
         }
 
         #donate{
@@ -40,6 +46,12 @@
                 padding-left: 500px;
                 padding-right: 550px;
                 padding-top: -10px;
+            }
+
+            &:hover {
+
+                background-color: $white;
+                color: $blueDark;
             }
         }
         

@@ -6,8 +6,42 @@
     // display: grid;
     // grid-template-columns: 16px auto 16px;
     // grid-template-areas: ". about .";
- 
-    >div{
+
+        #instaLogo{
+            grid-area: il;
+            color: $white;
+            background-color: $tanDark;
+            margin-left: 32px;
+            padding-left: 30px;
+            padding-right: 403px;
+            margin-top: 95px;
+            padding-top: 20px;
+            font-size: rem-calc(30);
+
+            &:hover {
+                color: $blueDark;
+            }
+        }
+
+        #instaText{
+            color: $blueDark;
+            background-color: $tanDark;
+            margin-right: 29px;
+            margin-left: 32px;
+            padding-bottom: 20px;
+            padding-left: 60px;
+        }
+
+        #instaTag{
+            grid-area: it;
+            color: $blueDark;
+            background-color: $tanDark;
+            margin-right: 29px;
+            padding-left: 55px;
+            margin-left: 32px;
+            padding-bottom: 15px;
+        }
+
         grid-area: about;
         // border: 1px solid blue;
 
@@ -15,64 +49,80 @@
             margin-bottom: 60px;
             margin-left: 16px;
             margin-right: 150px;
+            color: $blueDark;
         }
+
+        #paragraph2{
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-left: 16px;
+            margin-right: 150px;
+            color: $blueDark;
+        }
+
+    #aboutTitle{
+        background-color: $greenLight;
+        margin-right: 200px;
+        padding-left: 16px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        color: $greenDark;
+        margin-bottom: 30px;
+    }
+
+    .container {
+        position: relative;
+        width: 50%;
+    }
+
+    .container img {
+        width: 200%;
+        height: auto;
+    }
+
+    .container .btn {
+        position: absolute;
+        top: 50%;
+        left: 16%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: $pinkLight;
+        color: $pinkDark;
+        font-size: rem-calc(30);
+        padding: 12px 40px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .container .btn:hover {
+        background-color: $pinkDark;
+        color: $pinkLight;
+    }
+
+    .container .btn2 {
+        position: absolute;
+        top: 50%;
+        right: -118%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: $pinkLight;
+        color: $pinkDark;
+        font-size: rem-calc(30);
+        padding: 12px 40px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .container .btn2:hover {
+        background-color: $pinkDark;
+        color: $pinkLight;
+    }
+
+    #bg{
+        color: $blueDark;
+        margin-top: 60px;
+        margin-left: 20px;
     }
 }
-
-#aboutTitle{
-    background-color: $greenLight;
-    margin-right: 200px;
-    padding-left: 16px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    color: $greenDark;
-    margin-bottom: 30px;
-}
-
-.container {
-    position: relative;
-    width: 50%;
-  }
-
-  .container img {
-    width: 200%;
-    height: auto;
-  }
-
-  .container .btn {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: $pinkLight;
-    color: $pinkDark;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
-  .container .btn:hover {
-    background-color: black;
-  }
-
-  .container .btn2 {
-    position: absolute;
-    top: 50%;
-    right: -110%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: $pinkLight;
-    color: $pinkDark;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
-  .container .btn2:hover {
-    background-color: black;
-  }
