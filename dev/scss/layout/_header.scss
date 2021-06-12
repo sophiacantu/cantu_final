@@ -88,13 +88,14 @@ header {
         margin-top: 12px;
 
         @include md{
+            font-size: rem-calc(18);
             margin-left: 150px;
             margin-top: 40px;
             position: center;
         }
 
         @include lg{
-            margin-left: 190px;
+            margin-left: 140px;
             margin-top: 40px;
             position: center;
             align-items: center;

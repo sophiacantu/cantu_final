@@ -43,6 +43,10 @@
             ". . footer4";
             }
 
+            @include lg{
+                margin-left: -35px;
+            }
+
             li{
                 background-color: $blueDark;
                 background-size: cover;
@@ -89,6 +93,13 @@
                     margin-left: 54px;
                 }
 
+                @include lg{
+                    grid-area: footer1;
+                    margin-right: 20px;
+                    margin-top: 80px;
+                    margin-left: 124px;
+                }
+
                 &:hover {
                     color: $white;
                 }
@@ -102,6 +113,12 @@
                 @include md{
                     grid-area: footer2;
                     margin-left: 20px;
+                    margin-top: 70px;
+                }
+
+                @include lg{
+                    grid-area: footer2;
+                    margin-left: 110px;
                     margin-top: 70px;
                 }
             }
@@ -119,6 +136,12 @@
                     margin-left: 30px;
                     margin-top: 80px;
                 }
+
+                @include lg{
+                    grid-area: footer3;
+                    margin-left: 100px;
+                    margin-top: 80px;
+                }
             }
 
             #footer4{
@@ -131,6 +154,13 @@
                     grid-area: footer4;
                     margin-right: 40px;
                     margin-left: 10px;
+                    margin-top: -30px;
+                }
+
+                @include lg{
+                    grid-area: footer4;
+                    margin-right: 40px;
+                    margin-left: 160px;
                     margin-top: -30px;
                 }
             }

@@ -576,6 +576,7 @@ header #title {
 }
 @media (min-width: 768px) {
   header #title {
+    font-size: 1.125rem;
     margin-left: 150px;
     margin-top: 40px;
     position: center;
@@ -583,7 +584,7 @@ header #title {
 }
 @media (min-width: 992px) {
   header #title {
-    margin-left: 190px;
+    margin-left: 140px;
     margin-top: 40px;
     position: center;
     align-items: center;
@@ -687,6 +688,11 @@ header #nav-container {
     grid-template-areas: "footer2 footer1 footer3" ". . footer4";
   }
 }
+@media (min-width: 992px) {
+  #footer > div ul {
+    margin-left: -35px;
+  }
+}
 #footer > div ul li {
   background-color: #2A466D;
   background-size: cover;
@@ -733,6 +739,14 @@ header #nav-container {
     margin-left: 54px;
   }
 }
+@media (min-width: 992px) {
+  #footer > div ul #footer1 {
+    grid-area: footer1;
+    margin-right: 20px;
+    margin-top: 80px;
+    margin-left: 124px;
+  }
+}
 #footer > div ul #footer1:hover {
   color: #fff;
 }
@@ -744,6 +758,13 @@ header #nav-container {
   #footer > div ul #footer2 {
     grid-area: footer2;
     margin-left: 20px;
+    margin-top: 70px;
+  }
+}
+@media (min-width: 992px) {
+  #footer > div ul #footer2 {
+    grid-area: footer2;
+    margin-left: 110px;
     margin-top: 70px;
   }
 }
@@ -761,6 +782,13 @@ header #nav-container {
     margin-top: 80px;
   }
 }
+@media (min-width: 992px) {
+  #footer > div ul #footer3 {
+    grid-area: footer3;
+    margin-left: 100px;
+    margin-top: 80px;
+  }
+}
 #footer > div ul #footer4 {
   grid-area: footer4;
   margin-left: 30px;
@@ -771,6 +799,14 @@ header #nav-container {
     grid-area: footer4;
     margin-right: 40px;
     margin-left: 10px;
+    margin-top: -30px;
+  }
+}
+@media (min-width: 992px) {
+  #footer > div ul #footer4 {
+    grid-area: footer4;
+    margin-right: 40px;
+    margin-left: 160px;
     margin-top: -30px;
   }
 }
@@ -922,6 +958,11 @@ header #nav-container {
     margin-left: 10px;
   }
 }
+@media (min-width: 992px) {
+  #hero > div #t3 {
+    padding-right: 5px;
+  }
+}
 #hero > div #t3:hover {
   color: #fff;
 }
@@ -1013,6 +1054,14 @@ header #nav-container {
     width: 65%;
   }
 }
+@media (min-width: 992px) {
+  #hero > div ul #c3 {
+    grid-area: c3;
+    margin-left: 140px;
+    padding-right: 140px;
+    width: 55%;
+  }
+}
 @media (min-width: 768px) {
   #hero > div ul #c4 {
     grid-area: c4;
@@ -1047,7 +1096,13 @@ header #nav-container {
 }
 @media (min-width: 768px) {
   #about #instaLogo {
-    padding-right: 570px;
+    padding-right: 761px;
+    margin-left: 180px;
+  }
+}
+@media (min-width: 992px) {
+  #about #instaLogo {
+    padding-right: 75-px;
     margin-left: 180px;
   }
 }
@@ -1181,6 +1236,11 @@ header #nav-container {
     left: 27%;
   }
 }
+@media (min-width: 768px) {
+  #about .container .btn {
+    left: 17%;
+  }
+}
 #about .container .btn:hover {
   background-color: #B66669;
   color: #FEDFE5;
@@ -1202,6 +1262,11 @@ header #nav-container {
 @media (min-width: 768px) {
   #about .container .btn2 {
     right: -95%;
+  }
+}
+@media (min-width: 768px) {
+  #about .container .btn2 {
+    right: -93%;
   }
 }
 #about .container .btn2:hover {
@@ -1401,7 +1466,8 @@ header #nav-container {
 @media (min-width: 1200px) {
   #about > div ul #paragraph1 {
     grid-area: paragraph1;
-    margin-right: 20px;
+    margin-right: 190px;
+    font-size: 1.25rem;
   }
 }
 #about > div ul #paragraph1two {
@@ -1427,8 +1493,10 @@ header #nav-container {
 @media (min-width: 1200px) {
   #about > div ul #paragraph1two {
     grid-area: paragraph1two;
-    margin-right: 20px;
+    margin-right: 190px;
+    margin-top: -300px;
     color: #2A466D;
+    font-size: 1.25rem;
   }
 }
 #about > div ul #ab1 {
@@ -1812,18 +1880,22 @@ header #nav-container {
   color: #466D68;
   margin-bottom: 60px;
 }
-#mission div #missionText {
-  margin-bottom: 20px;
-  margin-left: 110px;
-  margin-right: 110px;
-  color: #2A466D;
-}
-#mission div #missionPic {
+#mission #missionPic {
   width: 90%;
   margin-top: 70px;
   margin-left: 25px;
 }
-#mission div #quote {
+@media (min-width: 768px) {
+  #mission #missionPic {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #mission #missionPic {
+    display: none;
+  }
+}
+#mission #quote {
   text-align: center;
   margin-bottom: 20px;
   margin-left: 110px;
@@ -1831,12 +1903,256 @@ header #nav-container {
   margin-top: 30px;
   color: #2A466D;
 }
-#mission div #quoteName {
+@media (min-width: 768px) {
+  #mission #quote {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #mission #quote {
+    display: none;
+  }
+}
+#mission #quoteName {
   margin-bottom: 20px;
   margin-left: 110px;
   margin-right: 110px;
   margin-top: 30px;
   color: #2A466D;
+}
+@media (min-width: 768px) {
+  #mission #quoteName {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #mission #quoteName {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  #mission button {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #mission button {
+    display: none;
+  }
+}
+#mission #quoteMd {
+  display: none;
+}
+@media (min-width: 768px) {
+  #mission #quoteMd {
+    display: grid;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 30px;
+    color: #2A466D;
+  }
+}
+@media (min-width: 992px) {
+  #mission #quoteMd {
+    display: grid;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 30px;
+    color: #2A466D;
+  }
+}
+#mission #quoteNameMd {
+  display: none;
+}
+@media (min-width: 768px) {
+  #mission #quoteNameMd {
+    display: grid;
+    margin-bottom: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 30px;
+    color: #2A466D;
+  }
+}
+@media (min-width: 992px) {
+  #mission #quoteNameMd {
+    display: grid;
+    margin-bottom: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 30px;
+    color: #2A466D;
+  }
+}
+#mission #button2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #mission #button2 {
+    display: grid;
+  }
+}
+@media (min-width: 992px) {
+  #mission #button2 {
+    display: grid;
+  }
+}
+
+#mission {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". mission .";
+}
+#mission > div {
+  grid-area: mission;
+}
+#mission > div ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "missionTextMd missionPic3 missionTextMd2";
+}
+#mission > div ul li img {
+  width: 60%;
+}
+@media (min-width: 768px) {
+  #mission > div ul li img {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  #mission > div ul li img {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  #mission > div ul li img {
+    width: 100%;
+  }
+}
+#mission > div ul li section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". mission .";
+  padding: 16px 0;
+}
+#mission > div ul li section > div {
+  grid-area: mission;
+}
+#mission > div ul #missionText {
+  margin-bottom: 20px;
+  margin-left: 110px;
+  margin-right: 110px;
+  color: #2A466D;
+}
+@media (min-width: 768px) {
+  #mission > div ul #missionText {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #mission > div ul #missionText {
+    display: none;
+  }
+}
+#mission > div ul #missionPic2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #mission > div ul #missionPic2 {
+    display: grid;
+    grid-area: missionPic2;
+    width: 90%;
+    margin-top: 70px;
+    margin-bottom: 55px;
+    margin-left: 25px;
+    margin-left: 60px;
+  }
+}
+@media (min-width: 992px) {
+  #mission > div ul #missionPic2 {
+    display: grid;
+    grid-area: missionPic2;
+    width: 90%;
+    margin-top: 70px;
+    margin-bottom: 55px;
+    margin-left: 25px;
+    margin-left: 60px;
+  }
+}
+#mission > div ul #missionTextMd {
+  display: none;
+}
+@media (min-width: 768px) {
+  #mission > div ul #missionTextMd {
+    display: grid;
+    grid-area: missionTextMd;
+    margin-bottom: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+    olor: #2A466D;
+  }
+}
+@media (min-width: 992px) {
+  #mission > div ul #missionTextMd {
+    display: grid;
+    grid-area: missionTextMd;
+    margin-bottom: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+    olor: #2A466D;
+  }
+}
+#mission > div ul #missionTextMd2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #mission > div ul #missionTextMd2 {
+    display: grid;
+    grid-area: missionTextMd2;
+    margin-bottom: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+    color: #2A466D;
+  }
+}
+@media (min-width: 992px) {
+  #mission > div ul #missionTextMd2 {
+    display: grid;
+    grid-area: missionTextMd2;
+    margin-bottom: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+    color: #2A466D;
+  }
+}
+#mission > div ul #missionPic3 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #mission > div ul #missionPic3 {
+    display: grid;
+    grid-area: missionPic3;
+    width: 90%;
+    margin-top: 70px;
+    margin-bottom: 55px;
+    margin-left: 25px;
+    margin-left: 60px;
+  }
+}
+@media (min-width: 992px) {
+  #mission > div ul #missionPic3 {
+    display: grid;
+    grid-area: missionPic3;
+    width: 90%;
+    margin-top: 70px;
+    margin-bottom: 55px;
+    margin-left: 25px;
+    margin-left: 60px;
+  }
 }
 
 /* =============

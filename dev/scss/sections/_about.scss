@@ -31,7 +31,12 @@
             font-size: rem-calc(30);
 
             @include md{
-                padding-right: 570px;
+                padding-right: 761px;
+                margin-left: 180px;
+            }
+
+            @include lg{
+                padding-right: 75-px;
                 margin-left: 180px;
             }
 
@@ -168,6 +173,10 @@
         @include md{
             left: 27%;
         }
+
+        @include md{
+            left: 17%;
+        }
     }
 
     .container .btn:hover {
@@ -191,6 +200,10 @@
 
         @include md{
             right: -95%;
+        }
+
+        @include md{
+            right: -93%;
         }
     }
 
@@ -404,7 +417,8 @@ h2{
 
             @include xl{
                 grid-area: paragraph1;
-                margin-right: 20px;
+                margin-right: 190px;
+                font-size: rem-calc(20);
             }
         }
 
@@ -429,8 +443,10 @@ h2{
 
             @include xl{
                 grid-area: paragraph1two;
-                margin-right: 20px;
+                margin-right: 190px;
+                margin-top: -300px;
                 color: $blueDark;
+                font-size: rem-calc(20);
             }
         }
 
