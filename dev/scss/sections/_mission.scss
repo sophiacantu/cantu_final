@@ -11,6 +11,10 @@
         grid-area: mission;
     }
 
+    #missionPic2{
+        display:none;
+    }
+
     #missionTitle{
         background-color: $greenLight;
         margin-right: 200px;
@@ -20,6 +24,27 @@
         padding-bottom: 18px;
         color: $greenDark;
         margin-bottom: 60px;
+
+        @include md{
+            margin-right: 350px;
+            padding-left: 55px;
+        }
+
+        @include lg{
+            margin-right: 550px;
+            padding-left: 55px;
+
+            font-size: rem-calc(35);
+            font-weight: 600;
+        }
+
+        @include xl{
+            margin-right: 900px;
+            padding-left: 55px;
+
+            font-size: rem-calc(35);
+            font-weight: 600;
+        }
     }
 
     #missionPic{
@@ -59,6 +84,7 @@
         margin-right: 110px;
         margin-top: 30px;
         color: $blueDark;
+        font-weight: 400;
 
         @include md{
             display: none;
@@ -100,6 +126,7 @@
             margin-right: 110px;
             margin-top: 30px;
             color: $blueDark;
+            font-size: rem-calc(24);
         }
     }
 
@@ -108,10 +135,10 @@
 
         @include md{
             display: grid;
-            margin-bottom: 20px;
+            margin-bottom: 80px;
             margin-left: 110px;
             margin-right: 110px;
-            margin-top: 30px;
+            margin-top: 15px;
             color: $blueDark;
         }
 
@@ -120,7 +147,7 @@
             margin-bottom: 20px;
             margin-left: 110px;
             margin-right: 110px;
-            margin-top: 30px;
+            margin-top: 15px;
             color: $blueDark;
         }
     }
@@ -130,10 +157,27 @@
 
         @include md{
             display: grid;
+            margin-right: 30px;
         }
 
         @include lg{
+            margin-right: 30px;
             display: grid;
+        }
+    }
+
+    #missionText{
+        margin-bottom: 20px;
+        margin-left: 110px;
+        margin-right: 110px;
+        color: $blueDark;
+
+        @include md{
+            display: none;
+        }
+
+        @include lg{
+            display: none;
         }
     }
 
@@ -159,21 +203,21 @@
                 "missionTextMd missionPic3 missionTextMd2";
     
                 li{
-                    img{
-                        width: 60%;
+                    // img{
+                    //     width: 60%;
     
-                        @include md{
-                            width: 100%
-                        }
+                    //     @include md{
+                    //         width: 100%
+                    //     }
     
-                        @include lg{
-                            width: 100%
-                        }
+                    //     @include lg{
+                    //         width: 100%
+                    //     }
     
-                        @include xl{
-                            width: 100%
-                        }
-                    }
+                    //     @include xl{
+                    //         width: 100%
+                    //     }
+                    // }
         
                     section{ 
                         display: grid;
@@ -186,23 +230,9 @@
                         }
                     }
                 }
-    
-                #missionText{
-                    margin-bottom: 20px;
-                    margin-left: 110px;
-                    margin-right: 110px;
-                    color: $blueDark;
-        
-                    @include md{
-                        display: none;
-                    }
-        
-                    @include lg{
-                        display: none;
-                    }
-                }
         
                 #missionPic2{
+
                     display: none;
         
                     @include md{
@@ -232,18 +262,20 @@
                         display: grid;
                         grid-area: missionTextMd;
                         margin-bottom: 20px;
-                        margin-left: 110px;
-                        margin-right: 110px;
-                        olor: $blueDark;
+                        margin-left: 80px;
+                        margin-right: 10px;
+                        color: $blueDark;
                     }
         
                     @include lg{
                         display: grid;
                         grid-area: missionTextMd;
                         margin-bottom: 20px;
-                        margin-left: 110px;
-                        margin-right: 110px;
-                        olor: $blueDark;
+                        margin-top: 120px;
+                        margin-left: 150px;
+                        margin-right: 70px;
+                        color: $blueDark;
+                        font-size: rem-calc(18)
                     }
                 }
         
@@ -261,11 +293,13 @@
         
                     @include lg{
                         display: grid;
+                        margin-top: 80px;
                         grid-area: missionTextMd2;
                         margin-bottom: 20px;
                         margin-left: 110px;
                         margin-right: 110px;
                         color: $blueDark;
+                        font-size: rem-calc(18)
                     }
                 }
         
@@ -275,11 +309,10 @@
                     @include md{
                         display: grid;
                         grid-area: missionPic3;
-                        width: 90%;
+                        width: 70%;
                         margin-top: 70px;
                         margin-bottom: 55px;
-                        margin-left: 25px;
-                        margin-left: 60px;
+                        margin-left: 130px;
                     }
         
                     @include lg{

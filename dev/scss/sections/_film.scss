@@ -20,6 +20,27 @@
         padding-bottom: 18px;
         color: $greenDark;
         margin-bottom: 30px;
+
+        @include md{
+            margin-right: 350px;
+            padding-left: 55px;
+        }
+
+        @include lg{
+            margin-right: 550px;
+            padding-left: 55px;
+
+            font-size: rem-calc(35);
+            font-weight: 600;
+        }
+
+        @include xl{
+            margin-right: 900px;
+            padding-left: 55px;
+
+            font-size: rem-calc(35);
+            font-weight: 600;
+        }
     }
 
     >div{
@@ -33,6 +54,13 @@
             margin-right: 100px;
             }
 
+            @include lg{
+                margin-left: 130px;
+                margin-top: 20px;
+                margin-right: 100px;
+                margin-bottom: 100px;
+                }
+
             &:hover {
                 color: $white;
             }
@@ -45,6 +73,12 @@
             @include md{
                 margin-left: 55px;
             }
+
+            @include lg{
+                margin-left: 160px;
+                margin-top: 20px;
+                margin-bottom: 100px;
+                }
 
             &:hover {
                 color: $white;
@@ -64,6 +98,11 @@
             @include md{
                 margin-left: 255px;
             }
+
+            @include lg{
+                margin-left: 500px;
+                font-size: rem-calc(25);
+            }
         }
 
         #rulesText{
@@ -71,6 +110,13 @@
             margin-left: 110px;
             margin-right: 100px;
             color: $blueDark;
+
+            @include lg{
+                font-size: rem-calc(18);
+                margin-bottom: 180px;
+                margin-left: 300px;
+                margin-right: 400px;
+            }
         }
 
         #visitors{
@@ -78,6 +124,12 @@
             margin-top: 70px;
             margin-left: 20px;
             margin-bottom: 40px;
+
+            @include lg{
+                font-size: rem-calc(35);
+                font-weight: 400;
+                margin-left: 40px;
+            }
         }
 
         #video{
@@ -145,6 +197,11 @@
                     margin-top: 40px;
                     width: 65%;
                 }
+
+                @include lg{
+                    grid-area: film1;
+                    margin-top: 100px;
+                }
             }
 
             #film2{
@@ -156,6 +213,11 @@
                     margin-left: 20px;
                     margin-top: 40px;
                     width: 65%;
+                }
+
+                @include lg{
+                    grid-area: film2;
+                    margin-top: 100px;
                 }
             }
         }

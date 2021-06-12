@@ -20,6 +20,27 @@
         padding-bottom: 18px;
         color: $greenDark;
         margin-bottom: 40px;
+
+        @include md{
+            margin-right: 350px;
+            padding-left: 55px;
+        }
+
+        @include lg{
+            margin-right: 550px;
+            padding-left: 55px;
+
+            font-size: rem-calc(35);
+            font-weight: 600;
+        }
+
+        @include xl{
+            margin-right: 900px;
+            padding-left: 55px;
+
+            font-size: rem-calc(35);
+            font-weight: 600;
+        }
     }
 
     div{
@@ -34,6 +55,12 @@
             margin-top: 55px;
             margin-left: 20px;
             margin-bottom: 40px;
+
+            @include lg{
+                font-size: rem-calc(25);
+                font-weight: 400;
+                margin-left: 40px;
+            }
         }
 
         #supportText{

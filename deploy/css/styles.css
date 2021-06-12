@@ -909,6 +909,7 @@ header #nav-container {
     grid-template-columns: auto 1200px auto;
     padding: 22px 0;
     margin-top: 280px;
+    margin-left: -100px;
   }
 }
 #hero h2 {
@@ -1170,10 +1171,17 @@ header #nav-container {
 }
 #about #paragraph2 {
   margin-bottom: 10px;
-  margin-top: 30px;
-  margin-left: 16px;
+  margin-top: 25px;
+  margin-left: 60px;
   margin-right: 150px;
   color: #2A466D;
+}
+@media (min-width: 992px) {
+  #about #paragraph2 {
+    font-size: 1.125rem;
+    margin-left: 40px;
+    margin-right: 100px;
+  }
 }
 #about #aboutTitle {
   background-color: #C4E6E2;
@@ -1183,6 +1191,7 @@ header #nav-container {
   padding-bottom: 18px;
   color: #466D68;
   margin-bottom: 30px;
+  font-size: 1.5625rem;
 }
 @media (min-width: 768px) {
   #about #aboutTitle {
@@ -1194,12 +1203,16 @@ header #nav-container {
   #about #aboutTitle {
     margin-right: 550px;
     padding-left: 55px;
+    font-size: 1.875rem;
+    font-weight: 600;
   }
 }
 @media (min-width: 1200px) {
   #about #aboutTitle {
     margin-right: 900px;
     padding-left: 55px;
+    font-size: 2.1875rem;
+    font-weight: 600;
   }
 }
 #about .container {
@@ -1292,7 +1305,7 @@ header #nav-container {
 }
 @media (min-width: 992px) {
   #about h2 {
-    font-size: 2.3125rem;
+    font-size: 2.1875rem;
     font-weight: 400;
   }
 }
@@ -1316,6 +1329,7 @@ header #nav-container {
     color: #466D68;
     margin-left: 5px;
     margin-right: 100px;
+    font-size: 1.75rem;
   }
 }
 @media (min-width: 1200px) {
@@ -1324,6 +1338,7 @@ header #nav-container {
     color: #466D68;
     margin-left: 5px;
     margin-right: 100px;
+    font-size: 1.75rem;
   }
 }
 #about > div #at1:hover {
@@ -1342,12 +1357,14 @@ header #nav-container {
   #about > div #at2 {
     display: grid;
     margin-left: 20px;
+    font-size: 1.75rem;
   }
 }
 @media (min-width: 1200px) {
   #about > div #at2 {
     display: grid;
     margin-left: 20px;
+    font-size: 1.75rem;
   }
 }
 #about > div #at2:hover {
@@ -1366,12 +1383,14 @@ header #nav-container {
   #about > div #at3 {
     display: grid;
     margin-left: 10px;
+    font-size: 1.75rem;
   }
 }
 @media (min-width: 1200px) {
   #about > div #at3 {
     display: grid;
     margin-left: 10px;
+    font-size: 1.75rem;
   }
 }
 #about > div #at3:hover {
@@ -1390,12 +1409,14 @@ header #nav-container {
   #about > div #at4 {
     display: grid;
     margin-left: 20px;
+    font-size: 1.75rem;
   }
 }
 @media (min-width: 1200px) {
   #about > div #at4 {
     display: grid;
     margin-left: 20px;
+    font-size: 1.75rem;
   }
 }
 #about > div #at4:hover {
@@ -1496,6 +1517,8 @@ header #nav-container {
     margin-right: 190px;
     margin-top: -300px;
     color: #2A466D;
+    margin-top: -120px;
+    margin-bottom: 50px;
     font-size: 1.25rem;
   }
 }
@@ -1613,11 +1636,40 @@ header #nav-container {
   margin-top: 120px;
   margin-bottom: 60px;
 }
+@media (min-width: 768px) {
+  #plan > div #planTitle {
+    margin-right: 350px;
+    padding-left: 55px;
+  }
+}
+@media (min-width: 992px) {
+  #plan > div #planTitle {
+    margin-right: 550px;
+    padding-left: 55px;
+    font-size: 2.1875rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1200px) {
+  #plan > div #planTitle {
+    margin-right: 900px;
+    padding-left: 55px;
+    font-size: 2.1875rem;
+    font-weight: 600;
+  }
+}
 #plan > div #plan2 {
   color: #2A466D;
   margin-top: 90px;
   margin-left: 20px;
   margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  #plan > div #plan2 {
+    font-size: 1.875rem;
+    font-weight: 400;
+    margin-left: 40px;
+  }
 }
 #plan > div #parking {
   width: 90%;
@@ -1653,6 +1705,13 @@ header #nav-container {
   margin-left: 20px;
   margin-bottom: 40px;
 }
+@media (min-width: 992px) {
+  #plan > div #plan3 {
+    font-size: 1.875rem;
+    font-weight: 400;
+    margin-left: 40px;
+  }
+}
 #plan > div #camping {
   width: 90%;
   margin-bottom: 30px;
@@ -1663,6 +1722,13 @@ header #nav-container {
   margin-left: 30px;
   margin-right: 140px;
   color: #2A466D;
+}
+@media (min-width: 992px) {
+  #plan > div #campingText {
+    margin-top: 10px;
+    font-size: 1.125rem;
+    margin-left: 50px;
+  }
 }
 #plan > div ul {
   display: grid;
@@ -1707,6 +1773,13 @@ header #nav-container {
     margin-right: 100px;
   }
 }
+@media (min-width: 992px) {
+  #plan > div ul #Cap1 {
+    margin-left: 70px;
+    margin-top: 250px;
+    margin-right: 100px;
+  }
+}
 #plan > div ul #Cap2 {
   grid-area: Cap2;
   color: #466D68;
@@ -1717,6 +1790,12 @@ header #nav-container {
 @media (min-width: 768px) {
   #plan > div ul #Cap2 {
     margin-left: 100px;
+  }
+}
+@media (min-width: 992px) {
+  #plan > div ul #Cap2 {
+    margin-left: 140px;
+    margin-top: 70px;
   }
 }
 
@@ -1736,6 +1815,28 @@ header #nav-container {
   color: #466D68;
   margin-bottom: 30px;
 }
+@media (min-width: 768px) {
+  #film #filmTitle {
+    margin-right: 350px;
+    padding-left: 55px;
+  }
+}
+@media (min-width: 992px) {
+  #film #filmTitle {
+    margin-right: 550px;
+    padding-left: 55px;
+    font-size: 2.1875rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1200px) {
+  #film #filmTitle {
+    margin-right: 900px;
+    padding-left: 55px;
+    font-size: 2.1875rem;
+    font-weight: 600;
+  }
+}
 #film > div #f1 {
   color: #466D68;
   margin-left: 10px;
@@ -1744,6 +1845,14 @@ header #nav-container {
   #film > div #f1 {
     margin-left: 30px;
     margin-right: 100px;
+  }
+}
+@media (min-width: 992px) {
+  #film > div #f1 {
+    margin-left: 130px;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-bottom: 100px;
   }
 }
 #film > div #f1:hover {
@@ -1756,6 +1865,13 @@ header #nav-container {
 @media (min-width: 768px) {
   #film > div #f2 {
     margin-left: 55px;
+  }
+}
+@media (min-width: 992px) {
+  #film > div #f2 {
+    margin-left: 160px;
+    margin-top: 20px;
+    margin-bottom: 100px;
   }
 }
 #film > div #f2:hover {
@@ -1777,17 +1893,38 @@ header #nav-container {
     margin-left: 255px;
   }
 }
+@media (min-width: 992px) {
+  #film > div #rules {
+    margin-left: 500px;
+    font-size: 1.5625rem;
+  }
+}
 #film > div #rulesText {
   margin-bottom: 50px;
   margin-left: 110px;
   margin-right: 100px;
   color: #2A466D;
 }
+@media (min-width: 992px) {
+  #film > div #rulesText {
+    font-size: 1.125rem;
+    margin-bottom: 180px;
+    margin-left: 300px;
+    margin-right: 400px;
+  }
+}
 #film > div #visitors {
   color: #2A466D;
   margin-top: 70px;
   margin-left: 20px;
   margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  #film > div #visitors {
+    font-size: 2.1875rem;
+    font-weight: 400;
+    margin-left: 40px;
+  }
 }
 #film > div #video {
   margin-bottom: 16px;
@@ -1852,6 +1989,12 @@ header #nav-container {
     width: 65%;
   }
 }
+@media (min-width: 992px) {
+  #film > div ul #film1 {
+    grid-area: film1;
+    margin-top: 100px;
+  }
+}
 #film > div ul #film2 {
   width: 120%;
 }
@@ -1863,12 +2006,21 @@ header #nav-container {
     width: 65%;
   }
 }
+@media (min-width: 992px) {
+  #film > div ul #film2 {
+    grid-area: film2;
+    margin-top: 100px;
+  }
+}
 
 /* =============
     Mission
 ============= */
 #mission > div {
   grid-area: mission;
+}
+#mission #missionPic2 {
+  display: none;
 }
 #mission #missionTitle {
   background-color: #C4E6E2;
@@ -1879,6 +2031,28 @@ header #nav-container {
   padding-bottom: 18px;
   color: #466D68;
   margin-bottom: 60px;
+}
+@media (min-width: 768px) {
+  #mission #missionTitle {
+    margin-right: 350px;
+    padding-left: 55px;
+  }
+}
+@media (min-width: 992px) {
+  #mission #missionTitle {
+    margin-right: 550px;
+    padding-left: 55px;
+    font-size: 2.1875rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1200px) {
+  #mission #missionTitle {
+    margin-right: 900px;
+    padding-left: 55px;
+    font-size: 2.1875rem;
+    font-weight: 600;
+  }
 }
 #mission #missionPic {
   width: 90%;
@@ -1919,6 +2093,7 @@ header #nav-container {
   margin-right: 110px;
   margin-top: 30px;
   color: #2A466D;
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   #mission #quoteName {
@@ -1963,6 +2138,7 @@ header #nav-container {
     margin-right: 110px;
     margin-top: 30px;
     color: #2A466D;
+    font-size: 1.5rem;
   }
 }
 #mission #quoteNameMd {
@@ -1971,10 +2147,10 @@ header #nav-container {
 @media (min-width: 768px) {
   #mission #quoteNameMd {
     display: grid;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     margin-left: 110px;
     margin-right: 110px;
-    margin-top: 30px;
+    margin-top: 15px;
     color: #2A466D;
   }
 }
@@ -1984,7 +2160,7 @@ header #nav-container {
     margin-bottom: 20px;
     margin-left: 110px;
     margin-right: 110px;
-    margin-top: 30px;
+    margin-top: 15px;
     color: #2A466D;
   }
 }
@@ -1994,11 +2170,29 @@ header #nav-container {
 @media (min-width: 768px) {
   #mission #button2 {
     display: grid;
+    margin-right: 30px;
   }
 }
 @media (min-width: 992px) {
   #mission #button2 {
+    margin-right: 30px;
     display: grid;
+  }
+}
+#mission #missionText {
+  margin-bottom: 20px;
+  margin-left: 110px;
+  margin-right: 110px;
+  color: #2A466D;
+}
+@media (min-width: 768px) {
+  #mission #missionText {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #mission #missionText {
+    display: none;
   }
 }
 
@@ -2015,24 +2209,6 @@ header #nav-container {
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "missionTextMd missionPic3 missionTextMd2";
 }
-#mission > div ul li img {
-  width: 60%;
-}
-@media (min-width: 768px) {
-  #mission > div ul li img {
-    width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  #mission > div ul li img {
-    width: 100%;
-  }
-}
-@media (min-width: 1200px) {
-  #mission > div ul li img {
-    width: 100%;
-  }
-}
 #mission > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -2041,22 +2217,6 @@ header #nav-container {
 }
 #mission > div ul li section > div {
   grid-area: mission;
-}
-#mission > div ul #missionText {
-  margin-bottom: 20px;
-  margin-left: 110px;
-  margin-right: 110px;
-  color: #2A466D;
-}
-@media (min-width: 768px) {
-  #mission > div ul #missionText {
-    display: none;
-  }
-}
-@media (min-width: 992px) {
-  #mission > div ul #missionText {
-    display: none;
-  }
 }
 #mission > div ul #missionPic2 {
   display: none;
@@ -2091,9 +2251,9 @@ header #nav-container {
     display: grid;
     grid-area: missionTextMd;
     margin-bottom: 20px;
-    margin-left: 110px;
-    margin-right: 110px;
-    olor: #2A466D;
+    margin-left: 80px;
+    margin-right: 10px;
+    color: #2A466D;
   }
 }
 @media (min-width: 992px) {
@@ -2101,9 +2261,11 @@ header #nav-container {
     display: grid;
     grid-area: missionTextMd;
     margin-bottom: 20px;
-    margin-left: 110px;
-    margin-right: 110px;
-    olor: #2A466D;
+    margin-top: 120px;
+    margin-left: 150px;
+    margin-right: 70px;
+    color: #2A466D;
+    font-size: 1.125rem;
   }
 }
 #mission > div ul #missionTextMd2 {
@@ -2122,11 +2284,13 @@ header #nav-container {
 @media (min-width: 992px) {
   #mission > div ul #missionTextMd2 {
     display: grid;
+    margin-top: 80px;
     grid-area: missionTextMd2;
     margin-bottom: 20px;
     margin-left: 110px;
     margin-right: 110px;
     color: #2A466D;
+    font-size: 1.125rem;
   }
 }
 #mission > div ul #missionPic3 {
@@ -2136,11 +2300,10 @@ header #nav-container {
   #mission > div ul #missionPic3 {
     display: grid;
     grid-area: missionPic3;
-    width: 90%;
+    width: 70%;
     margin-top: 70px;
     margin-bottom: 55px;
-    margin-left: 25px;
-    margin-left: 60px;
+    margin-left: 130px;
   }
 }
 @media (min-width: 992px) {
@@ -2171,6 +2334,28 @@ header #nav-container {
   color: #466D68;
   margin-bottom: 40px;
 }
+@media (min-width: 768px) {
+  #support #supportTitle {
+    margin-right: 350px;
+    padding-left: 55px;
+  }
+}
+@media (min-width: 992px) {
+  #support #supportTitle {
+    margin-right: 550px;
+    padding-left: 55px;
+    font-size: 2.1875rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1200px) {
+  #support #supportTitle {
+    margin-right: 900px;
+    padding-left: 55px;
+    font-size: 2.1875rem;
+    font-weight: 600;
+  }
+}
 #support div #supportPic {
   width: 80%;
   margin-top: 10px;
@@ -2181,6 +2366,13 @@ header #nav-container {
   margin-top: 55px;
   margin-left: 20px;
   margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  #support div #support1 {
+    font-size: 1.5625rem;
+    font-weight: 400;
+    margin-left: 40px;
+  }
 }
 #support div #supportText {
   margin-bottom: 30px;
