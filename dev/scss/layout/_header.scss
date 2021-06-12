@@ -31,14 +31,17 @@ header {
 
     @include md{
         padding: 24px 0;
+        padding-bottom: 80px;
     }
 
     @include lg{
         padding: 16px 0;
+        padding-bottom: 80px;
     }
 
     @include xl{
         padding: 16px 0;
+        padding-bottom: 80px;
     }
 
     >div {
@@ -60,9 +63,18 @@ header {
         }
 
         @include lg{
-            grid-template-areas: "logo nav";
+            display: grid;
+            grid-template-areas:
+            "logo title burger"
+            "nav nav nav";
             grid-template-columns: 20% auto;
+            grid-area: header;
         }
+
+        // @include lg{
+        //     grid-template-areas: "logo nav";
+        //     grid-template-columns: 20% auto;
+        // }
 
     }
 
@@ -71,11 +83,28 @@ header {
         color: $blueDark;
         font-size: rem-calc(15);
         padding-left: 15px;
+        position: center;
+        align-items: center;
         margin-top: 12px;
 
         @include md{
             margin-left: 150px;
             margin-top: 40px;
+            position: center;
+        }
+
+        @include lg{
+            margin-left: 190px;
+            margin-top: 40px;
+            position: center;
+            align-items: center;
+        }
+
+        @include xl{
+            padding-left: 170px;
+            margin-top: 70px;
+            position: center;
+            align-items: center;
         }
     }
 
@@ -87,6 +116,16 @@ header {
         @include md{
             margin-left: 50px;
             width: 60%;
+        }
+
+        @include lg{
+            margin-left: 50px;
+            width: 50%;
+        }
+
+        @include xl{
+            margin-left: 50px;
+            width: 50%;
         }
     }
 
@@ -114,9 +153,9 @@ header {
         grid-area: burger;
         padding: 10px;
 
-        @include lg{
-            display: none !important;
-        }
+        // @include lg{
+        //     display: none !important;
+        // }
 
         i{
             margin-left: auto;
@@ -140,9 +179,9 @@ header {
         grid-area: nav;
         padding: 20px 10px 10px;
 
-        @include lg{
-            // background-color: $white;
-            display: block !important;
-        }
+        // @include lg{
+        //     // background-color: $white;
+        //     display: block !important;
+        // }
     }
 }

@@ -391,7 +391,7 @@ img {
     Typography
 ============= */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -528,16 +528,19 @@ header {
 @media (min-width: 768px) {
   header {
     padding: 24px 0;
+    padding-bottom: 80px;
   }
 }
 @media (min-width: 992px) {
   header {
     padding: 16px 0;
+    padding-bottom: 80px;
   }
 }
 @media (min-width: 1200px) {
   header {
     padding: 16px 0;
+    padding-bottom: 80px;
   }
 }
 header > div {
@@ -556,8 +559,10 @@ header > div {
 }
 @media (min-width: 992px) {
   header > div {
-    grid-template-areas: "logo nav";
+    display: grid;
+    grid-template-areas: "logo title burger" "nav nav nav";
     grid-template-columns: 20% auto;
+    grid-area: header;
   }
 }
 header #title {
@@ -565,12 +570,31 @@ header #title {
   color: #2A466D;
   font-size: 0.9375rem;
   padding-left: 15px;
+  position: center;
+  align-items: center;
   margin-top: 12px;
 }
 @media (min-width: 768px) {
   header #title {
     margin-left: 150px;
     margin-top: 40px;
+    position: center;
+  }
+}
+@media (min-width: 992px) {
+  header #title {
+    margin-left: 190px;
+    margin-top: 40px;
+    position: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  header #title {
+    padding-left: 170px;
+    margin-top: 70px;
+    position: center;
+    align-items: center;
   }
 }
 header #logo {
@@ -582,6 +606,18 @@ header #logo {
   header #logo {
     margin-left: 50px;
     width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  header #logo {
+    margin-left: 50px;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  header #logo {
+    margin-left: 50px;
+    width: 50%;
   }
 }
 header #logo-container {
@@ -596,11 +632,6 @@ header #burger-container {
   display: flex;
   grid-area: burger;
   padding: 10px;
-}
-@media (min-width: 992px) {
-  header #burger-container {
-    display: none !important;
-  }
 }
 header #burger-container i {
   margin-left: auto;
@@ -621,11 +652,6 @@ header #nav-container {
   display: none;
   grid-area: nav;
   padding: 20px 10px 10px;
-}
-@media (min-width: 992px) {
-  header #nav-container {
-    display: block !important;
-  }
 }
 
 /* =============
@@ -653,6 +679,13 @@ header #nav-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "footer1 footer3" "footer2 footer4";
+}
+@media (min-width: 768px) {
+  #footer > div ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "footer2 footer1 footer3" ". . footer4";
+  }
 }
 #footer > div ul li {
   background-color: #2A466D;
@@ -690,11 +723,14 @@ header #nav-container {
   grid-area: footer1;
   margin-right: 20px;
   margin-left: 15px;
+  margin-top: 35px;
 }
 @media (min-width: 768px) {
   #footer > div ul #footer1 {
     grid-area: footer1;
     margin-right: 20px;
+    margin-top: 80px;
+    margin-left: 54px;
   }
 }
 #footer > div ul #footer1:hover {
@@ -708,19 +744,21 @@ header #nav-container {
   #footer > div ul #footer2 {
     grid-area: footer2;
     margin-left: 20px;
+    margin-top: 70px;
   }
 }
 #footer > div ul #footer3 {
   grid-area: footer3;
   margin-left: 30px;
-  margin-top: 55px;
+  margin-top: 45px;
   font-size: 3.125rem;
-  margin-bottom: 0px;
+  margin-bottom: -30px;
 }
 @media (min-width: 768px) {
   #footer > div ul #footer3 {
     grid-area: footer3;
-    margin-left: 140px;
+    margin-left: 30px;
+    margin-top: 80px;
   }
 }
 #footer > div ul #footer4 {
@@ -731,7 +769,9 @@ header #nav-container {
 @media (min-width: 768px) {
   #footer > div ul #footer4 {
     grid-area: footer4;
-    margin-right: 150px;
+    margin-right: 40px;
+    margin-left: 10px;
+    margin-top: -30px;
   }
 }
 
@@ -742,11 +782,15 @@ header #nav-container {
   display: grid;
   grid-template-areas: ". headerLinks .";
   margin-top: 168px;
-  background-color: #FEDFE5;
 }
 @media (min-width: 768px) {
   #headerLinks {
     margin-top: 160px;
+  }
+}
+@media (min-width: 992px) {
+  #headerLinks {
+    margin-top: 175px;
   }
 }
 #headerLinks > div {
@@ -754,16 +798,17 @@ header #nav-container {
 }
 #headerLinks > div #covid {
   background-color: #F18D8D;
-  padding-left: 180px;
-  padding-right: 190px;
+  left: 0;
+  position: fixed;
+  top: 160px;
+  width: 100%;
+  text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   #headerLinks > div #covid {
-    padding-left: 460px;
-    padding-right: 500px;
-    padding-top: -10px;
+    top: 195px;
   }
 }
 #headerLinks > div #covid:hover {
@@ -772,16 +817,17 @@ header #nav-container {
 }
 #headerLinks > div #donate {
   background-color: #2A466D;
-  padding-left: 230px;
-  padding-right: 190px;
+  left: 0;
+  position: fixed;
+  top: 210px;
+  width: 100%;
+  text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   #headerLinks > div #donate {
-    padding-left: 500px;
-    padding-right: 550px;
-    padding-top: -10px;
+    top: 246px;
   }
 }
 #headerLinks > div #donate:hover {
@@ -800,24 +846,25 @@ header #nav-container {
 ============= */
 #hero {
   margin-bottom: 64px;
-  margin-top: 90px;
+  margin-top: 150px;
   margin-left: 90px;
+  align-items: center;
 }
 @media (min-width: 768px) {
   #hero {
     margin-bottom: 24px;
-    margin-left: 5px;
+    margin-left: -60px;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". hero .";
     padding: 22px 0;
-    margin-top: 80px;
+    margin-top: 190px;
   }
 }
 @media (min-width: 992px) {
   #hero {
     padding: 22px 0;
-    margin-top: 350px;
+    margin-top: 250px;
   }
 }
 @media (min-width: 1200px) {
@@ -825,7 +872,7 @@ header #nav-container {
     margin-bottom: 64px;
     grid-template-columns: auto 1200px auto;
     padding: 22px 0;
-    margin-top: 380px;
+    margin-top: 280px;
   }
 }
 #hero h2 {
@@ -980,6 +1027,13 @@ header #nav-container {
 #about {
   grid-area: about;
 }
+#about div ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 90px;
+  margin-top: 80px;
+  grid-template-areas: "ab1 ab2 paragraph1" "ab3 ab4 paragraph1two";
+}
 #about #instaLogo {
   grid-area: il;
   color: #fff;
@@ -991,16 +1045,29 @@ header #nav-container {
   padding-top: 20px;
   font-size: 1.875rem;
 }
+@media (min-width: 768px) {
+  #about #instaLogo {
+    padding-right: 570px;
+    margin-left: 180px;
+  }
+}
 #about #instaLogo:hover {
   color: #2A466D;
 }
 #about #instaText {
+  grid-area: ite;
   color: #2A466D;
   background-color: #DCD3C4;
   margin-right: 29px;
   margin-left: 32px;
   padding-bottom: 20px;
   padding-left: 60px;
+}
+@media (min-width: 768px) {
+  #about #instaText {
+    margin-right: 187px;
+    margin-left: 180px;
+  }
 }
 #about #instaTag {
   grid-area: it;
@@ -1011,11 +1078,40 @@ header #nav-container {
   margin-left: 32px;
   padding-bottom: 15px;
 }
+@media (min-width: 768px) {
+  #about #instaTag {
+    margin-right: 187px;
+    margin-left: 180px;
+  }
+}
+@media (min-width: 768px) {
+  #about .blue-button {
+    margin-left: 400px;
+  }
+}
 #about #paragraph1 {
   margin-bottom: 60px;
   margin-left: 16px;
   margin-right: 150px;
   color: #2A466D;
+}
+@media (min-width: 768px) {
+  #about #paragraph1 {
+    grid-area: paragraph1;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #about #paragraph1 {
+    grid-area: paragraph1;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #about #paragraph1 {
+    grid-area: paragraph1;
+    margin-right: 20px;
+  }
 }
 #about #paragraph2 {
   margin-bottom: 10px;
@@ -1033,6 +1129,24 @@ header #nav-container {
   color: #466D68;
   margin-bottom: 30px;
 }
+@media (min-width: 768px) {
+  #about #aboutTitle {
+    margin-right: 350px;
+    padding-left: 55px;
+  }
+}
+@media (min-width: 992px) {
+  #about #aboutTitle {
+    margin-right: 550px;
+    padding-left: 55px;
+  }
+}
+@media (min-width: 1200px) {
+  #about #aboutTitle {
+    margin-right: 900px;
+    padding-left: 55px;
+  }
+}
 #about .container {
   position: relative;
   width: 50%;
@@ -1040,6 +1154,13 @@ header #nav-container {
 #about .container img {
   width: 200%;
   height: auto;
+}
+@media (min-width: 768px) {
+  #about .container img {
+    width: 170%;
+    margin-top: 60px;
+    margin-left: 70px;
+  }
 }
 #about .container .btn {
   position: absolute;
@@ -1054,6 +1175,11 @@ header #nav-container {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+}
+@media (min-width: 768px) {
+  #about .container .btn {
+    left: 27%;
+  }
 }
 #about .container .btn:hover {
   background-color: #B66669;
@@ -1073,6 +1199,11 @@ header #nav-container {
   cursor: pointer;
   border-radius: 5px;
 }
+@media (min-width: 768px) {
+  #about .container .btn2 {
+    right: -95%;
+  }
+}
 #about .container .btn2:hover {
   background-color: #B66669;
   color: #FEDFE5;
@@ -1081,6 +1212,321 @@ header #nav-container {
   color: #2A466D;
   margin-top: 60px;
   margin-left: 20px;
+}
+#about h2 {
+  color: #466D68;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0px 16px 24px;
+}
+@media (min-width: 768px) {
+  #about h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 992px) {
+  #about h2 {
+    font-size: 2.3125rem;
+    font-weight: 400;
+  }
+}
+#about h2:hover {
+  color: #fff;
+}
+#about > div #at1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #about > div #at1 {
+    display: grid;
+    color: #466D68;
+    margin-left: 5px;
+    margin-right: 100px;
+  }
+}
+@media (min-width: 992px) {
+  #about > div #at1 {
+    display: grid;
+    color: #466D68;
+    margin-left: 5px;
+    margin-right: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  #about > div #at1 {
+    display: grid;
+    color: #466D68;
+    margin-left: 5px;
+    margin-right: 100px;
+  }
+}
+#about > div #at1:hover {
+  color: #fff;
+}
+#about > div #at2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #about > div #at2 {
+    display: grid;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #about > div #at2 {
+    display: grid;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #about > div #at2 {
+    display: grid;
+    margin-left: 20px;
+  }
+}
+#about > div #at2:hover {
+  color: #fff;
+}
+#about > div #at3 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #about > div #at3 {
+    display: grid;
+    margin-left: 30px;
+  }
+}
+@media (min-width: 992px) {
+  #about > div #at3 {
+    display: grid;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  #about > div #at3 {
+    display: grid;
+    margin-left: 10px;
+  }
+}
+#about > div #at3:hover {
+  color: #fff;
+}
+#about > div #at4 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #about > div #at4 {
+    display: grid;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #about > div #at4 {
+    display: grid;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #about > div #at4 {
+    display: grid;
+    margin-left: 20px;
+  }
+}
+#about > div #at4:hover {
+  color: #fff;
+}
+@media (min-width: 768px) {
+  #about > div {
+    grid-area: about;
+  }
+}
+#about > div ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 90px;
+  margin-top: 80px;
+  grid-template-areas: "ab1 ab2 paragraph1" "ab3 ab4 paragraph1two";
+}
+@media (min-width: 768px) {
+  #about > div ul li img {
+    background-color: #F6F2EB;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  #about > div ul li img {
+    background-color: #F6F2EB;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  #about > div ul li img {
+    background-color: #F6F2EB;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+}
+#about > div ul li section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". about .";
+  padding: 16px 0;
+}
+#about > div ul li section > div {
+  grid-area: about;
+}
+#about > div ul #paragraph1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #about > div ul #paragraph1 {
+    display: grid;
+    grid-area: paragraph1;
+    margin-right: 20px;
+    color: #2A466D;
+  }
+}
+@media (min-width: 992px) {
+  #about > div ul #paragraph1 {
+    grid-area: paragraph1;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #about > div ul #paragraph1 {
+    grid-area: paragraph1;
+    margin-right: 20px;
+  }
+}
+#about > div ul #paragraph1two {
+  display: none;
+}
+@media (min-width: 768px) {
+  #about > div ul #paragraph1two {
+    display: grid;
+    grid-area: paragraph1two;
+    margin-right: 20px;
+    margin-left: 15px;
+    margin-top: -180px;
+    color: #2A466D;
+  }
+}
+@media (min-width: 992px) {
+  #about > div ul #paragraph1two {
+    grid-area: paragraph1two;
+    margin-right: 20px;
+    color: #2A466D;
+  }
+}
+@media (min-width: 1200px) {
+  #about > div ul #paragraph1two {
+    grid-area: paragraph1two;
+    margin-right: 20px;
+    color: #2A466D;
+  }
+}
+#about > div ul #ab1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #about > div ul #ab1 {
+    display: grid;
+    grid-area: ab1;
+    width: 10%;
+    margin-left: -40px;
+  }
+}
+@media (min-width: 992px) {
+  #about > div ul #ab1 {
+    display: grid;
+    grid-area: ab1;
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  #about > div ul #ab1 {
+    display: grid;
+    grid-area: ab1;
+    width: 60%;
+  }
+}
+#about > div ul #ab2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #about > div ul #ab2 {
+    display: grid;
+    grid-area: ab2;
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  #about > div ul #ab2 {
+    display: grid;
+    grid-area: ab2;
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  #about > div ul #ab2 {
+    display: grid;
+    grid-area: ab2;
+    width: 60%;
+  }
+}
+#about > div ul #ab3 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #about > div ul #ab3 {
+    display: grid;
+    grid-area: ab3;
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  #about > div ul #ab3 {
+    display: grid;
+    grid-area: ab3;
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  #about > div ul #ab3 {
+    display: grid;
+    grid-area: ab3;
+    width: 60%;
+  }
+}
+#about > div ul #ab4 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #about > div ul #ab4 {
+    display: grid;
+    grid-area: ab4;
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  #about > div ul #ab4 {
+    display: grid;
+    grid-area: ab4;
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  #about > div ul #ab4 {
+    display: grid;
+    grid-area: ab4;
+    width: 60%;
+  }
 }
 
 /* =============
@@ -1116,6 +1562,23 @@ header #nav-container {
   margin-right: 140px;
   color: #2A466D;
 }
+@media (min-width: 768px) {
+  #plan > div #parkingText {
+    display: none;
+  }
+}
+#plan > div #parkingMd {
+  display: none;
+}
+@media (min-width: 768px) {
+  #plan > div #parkingMd {
+    display: grid;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 140px;
+    color: #2A466D;
+  }
+}
 #plan > div #plan3 {
   color: #2A466D;
   margin-top: 90px;
@@ -1146,7 +1609,8 @@ header #nav-container {
   #plan > div ul #p1 {
     grid-area: p1;
     margin-right: 20px;
-    width: 65%;
+    margin-left: 110px;
+    width: 85%;
   }
 }
 #plan > div ul #p2 {
@@ -1156,20 +1620,22 @@ header #nav-container {
 @media (min-width: 768px) {
   #plan > div ul #p2 {
     grid-area: p2;
-    margin-left: 20px;
-    width: 120%;
+    margin-left: -40px;
+    margin-right: 10px;
+    margin-top: -60px;
+    width: 50%;
   }
 }
 #plan > div ul #Cap1 {
   grid-area: Cap1;
   color: #466D68;
-  margin-top: 110px;
+  margin-top: 140px;
   margin-left: 35px;
   font-size: 1.25rem;
 }
 @media (min-width: 768px) {
   #plan > div ul #Cap1 {
-    margin-left: 5px;
+    margin-left: 70px;
     margin-right: 100px;
   }
 }
@@ -1182,7 +1648,7 @@ header #nav-container {
 }
 @media (min-width: 768px) {
   #plan > div ul #Cap2 {
-    margin-left: 20px;
+    margin-left: 100px;
   }
 }
 
@@ -1208,7 +1674,7 @@ header #nav-container {
 }
 @media (min-width: 768px) {
   #film > div #f1 {
-    margin-left: 5px;
+    margin-left: 30px;
     margin-right: 100px;
   }
 }
@@ -1221,7 +1687,7 @@ header #nav-container {
 }
 @media (min-width: 768px) {
   #film > div #f2 {
-    margin-left: 20px;
+    margin-left: 55px;
   }
 }
 #film > div #f2:hover {
@@ -1238,6 +1704,11 @@ header #nav-container {
   margin-left: 135px;
   margin-bottom: 40px;
 }
+@media (min-width: 768px) {
+  #film > div #rules {
+    margin-left: 255px;
+  }
+}
 #film > div #rulesText {
   margin-bottom: 50px;
   margin-left: 110px;
@@ -1253,6 +1724,15 @@ header #nav-container {
 #film > div #video {
   margin-bottom: 16px;
   margin-left: 50px;
+}
+@media (min-width: 768px) {
+  #film > div #video {
+    margin-left: 80px;
+    width: 600px;
+  }
+}
+#film > div button {
+  margin-left: 265px;
 }
 #film > div ul {
   margin-left: 60px;
@@ -1300,6 +1780,7 @@ header #nav-container {
     grid-area: film1;
     margin-right: 10px;
     margin-left: 20px;
+    margin-top: 40px;
     width: 65%;
   }
 }
@@ -1310,7 +1791,8 @@ header #nav-container {
   #film > div ul #film2 {
     grid-area: film2;
     margin-left: 20px;
-    width: 120%;
+    margin-top: 40px;
+    width: 65%;
   }
 }
 

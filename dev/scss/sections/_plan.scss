@@ -39,6 +39,20 @@
             margin-left: 30px;
             margin-right: 140px;
             color: $blueDark;
+            @include md{
+                display: none;
+            }
+        }
+
+        #parkingMd{
+            display: none;
+            @include md{
+            display: grid;
+            margin-bottom: 50px;
+            margin-left: 30px;
+            margin-right: 140px;
+            color: $blueDark;
+            }
         }
 
         #plan3{
@@ -74,7 +88,8 @@
                 @include md{
                     grid-area: p1;
                     margin-right: 20px;
-                    width: 65%;
+                    margin-left: 110px;
+                    width: 85%;
                 }
             }
 
@@ -83,20 +98,22 @@
                 margin-right: 10px;
                 @include md{
                     grid-area: p2;
-                    margin-left: 20px;
-                    width: 120%;
+                    margin-left: -40px;
+                    margin-right: 10px;
+                    margin-top: -60px;
+                    width: 50%;
                 }
             }
 
             #Cap1{
                 grid-area: Cap1;
                 color: $greenDark;
-                margin-top: 110px;
+                margin-top: 140px;
                 margin-left: 35px;
                 font-size: rem-calc(20);
     
                 @include md{
-                margin-left: 5px;
+                margin-left: 70px;
                 margin-right: 100px;
                 }
             }
@@ -109,7 +126,7 @@
                 font-size: rem-calc(20);
 
                 @include md{
-                    margin-left: 20px;
+                    margin-left: 100px;
                 }
             }
         }

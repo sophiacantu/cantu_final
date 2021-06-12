@@ -35,6 +35,14 @@
             "footer1 footer3"
             "footer2 footer4";
 
+            @include md{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            "footer2 footer1 footer3"
+            ". . footer4";
+            }
+
             li{
                 background-color: $blueDark;
                 background-size: cover;
@@ -72,10 +80,13 @@
                 grid-area: footer1;
                 margin-right: 20px;
                 margin-left: 15px;
+                margin-top: 35px;
 
                 @include md{
                     grid-area: footer1;
                     margin-right: 20px;
+                    margin-top: 80px;
+                    margin-left: 54px;
                 }
 
                 &:hover {
@@ -91,6 +102,7 @@
                 @include md{
                     grid-area: footer2;
                     margin-left: 20px;
+                    margin-top: 70px;
                 }
             }
 
@@ -98,13 +110,14 @@
 
                 grid-area: footer3;
                 margin-left: 30px;
-                margin-top: 55px;
+                margin-top: 45px;
                 font-size: rem-calc(50);
-                margin-bottom: 0px;
+                margin-bottom: -30px;
 
                 @include md{
                     grid-area: footer3;
-                    margin-left: 140px;
+                    margin-left: 30px;
+                    margin-top: 80px;
                 }
             }
 
@@ -116,7 +129,9 @@
 
                 @include md{
                     grid-area: footer4;
-                    margin-right: 150px;
+                    margin-right: 40px;
+                    margin-left: 10px;
+                    margin-top: -30px;
                 }
             }
         }
